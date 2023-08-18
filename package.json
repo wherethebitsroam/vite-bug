@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "dependencies": {
     "@bokeh/bokehjs": "2.0.1",
+    "@deck.gl/aggregation-layers": "^8.2.5",
+    "@deck.gl/geo-layers": "^8.2.5",
+    "@deck.gl/layers": "^8.2.5",
+    "@deck.gl/mesh-layers": "^8.2.5",
     "@emotion-icons/emotion-icon": "^4.1.0",
     "@emotion-icons/material-outlined": "^3.14.0",
     "@emotion-icons/material-rounded": "^3.14.0",
@@ -62,7 +66,7 @@
     "react-plotly.js": "^2.4.0",
     "react-syntax-highlighter": "^15.4.5",
     "react-transition-group": "^4.4.1",
-    "react-virtualized": "^9.22.3",
+    "react-virtualized": "^9.22.5",
     "react-webcam": "^6.0.0",
     "react-window": "^1.8.5",
     "rehype-katex": "^5.0.0",
@@ -134,8 +138,9 @@
     "vite": "^4.4.9",
     "vite-tsconfig-paths": "^4.2.0"
   },
-  "packageManager": "yarn@3.3.0",
-  "resolutions": {
-    "react-virtualized": "patch:react-virtualized@9.22.3#./patches/react-virtualized-9.22.3.patch"
+  "pnpm": {
+    "patchedDependencies": {
+      "react-virtualized@9.22.5": "patches/react-virtualized@9.22.5.patch"
+    }
   }
 }
